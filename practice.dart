@@ -37,4 +37,15 @@ void main() {
   print(li);
   li.insertAll(4, [200,300]);  //insertAll([ele1, ele2, ...])
   print(li);
+  li.sort();
+  print(li);
+  print("Avik");
+  bool val = li.contains(500);
+  print(val);
+  var res = li.where((ele) => ele % 2 == 0);
+  print(res.toList());
+  // These are Getters, Not functions
+  print(li.length);
+  print(li.isEmpty);
+  print(li.isNotEmpty);
 }
