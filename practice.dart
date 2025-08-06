@@ -112,3 +112,23 @@ int fact(int n) {
   }
   return prod;
 }
+
+// Switch:
+void main() {
+  int n = 1;
+  print(printDay(n));
+}
+
+String printDay(int n) {
+  switch (n) {
+    case (1):
+      return "Sunday";
+    case (2):
+      return "Tuesday";
+    case (3):
+      return "Wednesday";
+    default:
+      return "Record Not Found";
+  }
+}
+
