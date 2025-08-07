@@ -181,3 +181,28 @@ int div2(int a, int b) {  // its gives integer division as cpp
 String Name(String s) {
   return ("Hello " + s);
 }
+
+// Function in class using with object:
+void main() {
+  Avik avik = new Avik();   // object
+  int res = avik.multiple(2);   // object.function_name
+  print(res);
+}
+
+class Avik {
+  int multiple(int n) {
+    return n * 100;
+  }
+}
+
+// Function in class with static:
+void main() {
+  int res = Avik.multiple(3);  // class.function_name
+  print(res);
+}
+
+class Avik {
+  static int multiple(int n) {
+    return n * 100;
+  }
+}
