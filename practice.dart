@@ -195,7 +195,7 @@ class Avik {
   }
 }
 
-// Function in class with static:
+// Function in class using with static:
 void main() {
   int res = Avik.multiple(3);  // class.function_name
   print(res);
