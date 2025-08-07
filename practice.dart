@@ -147,3 +147,28 @@ void main() {
     print(i);
   }
 }
+
+// Functions:
+void main() {
+  int a = 4, b = 2;
+  print(sum(a, b));
+  print(sub(a, b));
+  print(mul(a, b));
+  print(Name("Avik"));
+}
+
+int sum(int a, int b) {
+  return a + b;
+}
+
+int sub(int a, int b) {
+  return a - b;
+}
+
+int mul(int a, int b) {
+  return a * b;
+}
+
+String Name(String s) {
+  return ("Hello " + s);
+}
