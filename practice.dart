@@ -154,6 +154,8 @@ void main() {
   print(sum(a, b));
   print(sub(a, b));
   print(mul(a, b));
+  print(div(a, b));
+  print(div2(a, b));
   print(Name("Avik"));
 }
 
@@ -167,6 +169,13 @@ int sub(int a, int b) {
 
 int mul(int a, int b) {
   return a * b;
+}
+double div(int a, int b) {
+  return (a / b);
+}
+
+int div2(int a, int b) {  // its gives integer division as cpp
+  return a ~/ b;
 }
 
 String Name(String s) {
