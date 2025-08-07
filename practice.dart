@@ -132,3 +132,10 @@ String printDay(int n) {
   }
 }
 
+// Continue:
+void main() {
+  for (int i = 1; i <= 10; i++) {
+    if (i == 8) continue;
+    print(i);
+  }
+}
