@@ -206,3 +206,18 @@ class Avik {
     return n * 100;
   }
 }
+
+// Positional Parameters: (used in function)
+void main() {
+  Map userData = userMap("Avik", 23, "M", 12);
+  print(userData);
+}
+
+Map userMap(String name, int age, String gender, int userClass){
+  return {
+    "Name" : name,
+    "Age" : age,
+    "Gender" : gender,
+    "Class" : userClass
+  };
+}
