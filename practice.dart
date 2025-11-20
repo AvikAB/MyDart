@@ -221,3 +221,50 @@ Map userMap(String name, int age, String gender, int userClass){
     "Class" : userClass
   };
 }
+
+// Named Parameter:
+// in that function '?' means that datatype's variable can be Null or that data
+// We can also use 'required' keyword for this same type
+
+void main() {
+  Map userData = userMap (name:"Avik", age:23, gender:"M", userClass:12);
+  print(userData);
+}
+
+Map userMap({String? name, int? age, String? gender, int? userClass}){
+  return {
+    "Name" : name,
+    "Age" : age,
+    "Gender" : gender,
+    "Class" : userClass
+  };
+}
+
+// Position doesn't matter here
+void main() {
+  Map userData = userMap (name:"Avik", gender:"M", age:23, userClass:12);  // here, gender at first but in function we keep it at last
+  print(userData);
+}
+
+Map userMap({String? name, int? age, String? gender, int? userClass}){
+  return {
+    "Name" : name,
+    "Age" : age,
+    "Gender" : gender,
+    "Class" : userClass
+  };
+}
+// Same code using 'required' keyword:
+void main() {
+  Map userData = userMap (name:"Avik", gender:"M", age:23, userClass:12);
+  print(userData);
+}
+
+Map userMap({required String name,required int age,required String gender,required int userClass}){
+  return {
+    "Name" : name,
+    "Age" : age,
+    "Gender" : gender,
+    "Class" : userClass
+  };
+}
