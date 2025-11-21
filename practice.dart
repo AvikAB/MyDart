@@ -268,3 +268,26 @@ Map userMap({required String name,required int age,required String gender,requir
     "Class" : userClass
   };
 }
+
+// Default Parameter:
+void main() {
+  double length = 5.0;
+  double breadth = 2.0;
+  double b = 8.0; // base
+  double h = 3.0; // height
+  print(areaRectangle(length, breadth));
+  print(areaTriangle(base: b, height: h));
+  print(areaCircle());
+}
+
+double areaRectangle(double length, double breadth) {   // positional parameter
+  return length * breadth;
+}
+
+double areaTriangle({required double base, required double height}) {   // named parameter
+  return 0.5 * base * height;
+}
+
+double areaCircle({double radius = 1.0}) {   // Default Parameter
+  return 3.1416 * radius * radius;
+}
